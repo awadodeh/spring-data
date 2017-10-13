@@ -5,8 +5,9 @@ import org.springframework.data.jpa.repository.JpaRepository;
 
 /**
  * DataSource Management for the Departments at the University.
- * <p>
- * Created by owdaa.
+ *
+ * Created by owdaa
  */
 public interface DepartmentRepository extends JpaRepository<Department, Integer> {
+
 }

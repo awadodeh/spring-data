@@ -28,12 +28,12 @@ public class JpaRepositoryDemo {
     @Test
     public void runJpaRepositoryMethods() {
 
-        departmentRepository.save(new Department("Humanities"));
+        departmentRepository.save(new Department("Humanities",null));
         departmentRepository.flush();
 
-        departmentRepository.saveAndFlush(new Department("Fine Arts"));
+        departmentRepository.saveAndFlush(new Department("Fine Arts",null));
 
-        departmentRepository.save(new Department("Social Science"));
+        departmentRepository.save(new Department("Social Science", null));
 
         System.out.println("\n*************3 Departments*************");
         departmentRepository.findAll().forEach(System.out::println);
